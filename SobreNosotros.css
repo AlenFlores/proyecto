@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+    color: black;
+    font-size: 18px;
+}
+/* menu responsive*/
+#btn-menu{
+    display: none;
+}
+.nav{
+    width: 100%;
+    background-color: rgb(201,120,30);
+}
+.nav  .menu{
+    display: none;
+    text-align: center;
+    width: 50px;
+    height: 40px;
+    padding-top: 18px;
+}
+a{
+    text-decoration: none;
+}
+.nav label:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.1);
+}
+.nav_menu .nav_li{
+    display: inline-flex;
+    padding: 16.5px;
+}
+.nav_li i{
+    width: 30px;
+    margin: auto;
+}
+.nav_menu .nav_li:hover{
+    background-color: rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+@media (max-width:930px){
+    .nav .menu{
+        display: block;
+        border-right: 1px solid white;
+        
+    }
+    .nav_menu .nav_li{
+        display: block;
+        padding: 11px;
+        border-top: 1px solid white;
+    }
+    .nav_menu{
+        position: absolute;
+        background-color: rgba(201,120,30);
+        width: 70%;
+        margin-left: -70%;
+    }
+    .nav .nav_menu {
+        flex-direction: column;
+    }
+}
+#btn-menu:checked ~.nav_menu{
+    margin: 0;
+    transition: 1s;
+}
+/* titulo */
+.titulo a{
+    font-size: 2.5em;
+    border: 1.5px solid rgb(0,0,0);
+    padding: 5px;
+    border-radius: 15px;
+    background-color: rgb(201,120,30);
+    box-shadow: 1px 1px 1px 2px rgb(0,0,0);
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 2em;
+}
+/* footer */
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(201,120,30);
+    height: 60px;
+    text-align: center;
+}
+.texto_sidebar .enlace{
+    color: #ff0000;
+}
+/* contenedor */
+.contenedor{
+    height: 780px;
+    width: 1000px;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+}
+body{
+    background-color: #e9ecf4;
+}
+.texto p{
+    margin:20px 20px;
+}
+.img img{
+    width: 320px;
+}
+.contenedor .img{
+    text-align: center;
+}
